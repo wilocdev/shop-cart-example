@@ -26,6 +26,10 @@ export default function Cart() {
           <CloseCart />
         </button>
       </header>
+      <div className="gap gap-4 text-2xl font-bold flex justify-between pr-4">
+        <p>Total:</p>
+        <span>{getTotal().toLocaleString('es-co')}</span>
+      </div>
       <div className="flex gap-4 flex-col overflow-y-auto pr-4 custom-scroll">
         {cart.map((shoe) => (
           <div
@@ -67,10 +71,6 @@ export default function Cart() {
           </div>
         ))}
       </div>
-      <footer className="gap gap-4 text-2xl font-bold flex justify-between pr-4">
-        <p>Total:</p>
-        <span>{getTotal().toLocaleString('es-co')}</span>
-      </footer>
     </section>
   )
 }
