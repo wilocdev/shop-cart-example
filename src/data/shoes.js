@@ -1,0 +1,51 @@
+export const shoes = [
+  {
+    id: 1,
+    name: "Nike Air Force 1 '07 LV8",
+    price: 740000,
+    img: 'https://nikeco.vtexassets.com/arquivos/ids/677296-1200-auto?v=638623621801830000&width=1200&height=auto&aspect=true',
+    qty: 0,
+  },
+  {
+    id: 2,
+    name: "Nike Air Force 1 '07 LV8",
+    price: 805000,
+    img: 'https://nikeco.vtexassets.com/arquivos/ids/808165-1200-auto?v=638807694104230000&width=1200&height=auto&aspect=true',
+    qty: 0,
+  },
+  {
+    id: 3,
+    name: "Nike Air Force 1 '07 LV8",
+    price: 750000,
+    img: 'https://nikeco.vtexassets.com/arquivos/ids/831270-1200-auto?v=638808503364630000&width=1200&height=auto&aspect=true',
+    qty: 0,
+  },
+  {
+    id: 4,
+    name: "Air Force 1 '07 LX",
+    price: 800000,
+    img: 'https://nikeco.vtexassets.com/arquivos/ids/732527-1200-auto?v=638708425754500000&width=1200&height=auto&aspect=true',
+    qty: 0,
+  },
+  {
+    id: 5,
+    name: 'Air Jordan 4 RM',
+    price: 875000,
+    img: 'https://nikeco.vtexassets.com/arquivos/ids/898680-1200-auto?v=638902808621700000&width=1200&height=auto&aspect=true',
+    qty: 0,
+  },
+  {
+    id: 6,
+    name: 'Nike Dunk Low Retro SE',
+    price: 855000,
+    img: 'https://nikeco.vtexassets.com/arquivos/ids/857526-1200-auto?v=638828571445370000&width=1200&height=auto&aspect=true',
+    qty: 0,
+  },
+  {
+    id: 7,
+    name: 'Nike Court Vision Low',
+    price: 470000,
+    img: 'https://nikeco.vtexassets.com/arquivos/ids/893957-1200-auto?v=638899428384900000&width=1200&height=auto&aspect=true',
+    qty: 0,
+  },
+]
