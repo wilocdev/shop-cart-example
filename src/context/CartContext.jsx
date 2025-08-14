@@ -1,11 +1,14 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import { shoes } from '../data/shoes'
 
 const CartContext = createContext()
 
 export const CartProvider = ({ children }) => {
   const [openCart, setOpenCart] = useState(false)
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState(() => {
+    const localStorageCart = window.localStorage.getItem('Cart')
+    return localStorageCart ? JSON.parse(localStorageCart) : []
+  })
 
   const handleOpenCart = () => {
     setOpenCart(!openCart)
@@ -48,6 +51,11 @@ export const CartProvider = ({ children }) => {
   const getTotal = () => {
     return cart.reduce((acc, item) => acc + item.price * item.qty, 0)
   }
+
+  useEffect(() => {
+    const cartSave = JSON.stringify(cart)
+    window.localStorage.setItem('Cart', cartSave)
+  }, [cart])
 
   return (
     <CartContext.Provider
